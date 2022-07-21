@@ -3,7 +3,7 @@ def dictutil():
     while True:
         j = False
         dictinp = input("Word: ")
-        with open("/home/codecube/CC-assistant/assistant/dictionary.txt", "r") as file:
+        with open("/home/codecube/CC-assistant/dictionary.txt", "r") as file:
             #command check
             if dictinp == "/exit" or dictinp == "/e":
                 assistant.startassistant()
@@ -19,7 +19,7 @@ def dictutil():
             elif dictinp == " ":
                 pass
             #dictionary check
-            with open("/home/codecube/CC-assistant/assistant/dictionary.txt", "r") as file:
+            with open("/home/codecube/CC-assistant/dictionary.txt", "r") as file:
                 for i in file.readlines(): 
                     if dictinp in i:
                         print(i)
@@ -30,7 +30,7 @@ def dictutil():
                     if enttransinp == "/c":
                         print("you canceled the word addition.")
                     else:
-                        with open("/home/codecube/CC-assistant/assistant/dictionary.txt", "a") as fileap:
+                        with open("/home/codecube/CC-assistant/dictionary.txt", "a") as fileap:
                             fileap.write("\n")
                             fileap.write(dictinp)
                             fileap.write(" - ")
