@@ -9,7 +9,7 @@ def writefile():
     inppsswd = input("Password: ")
     inpmail = input("Email: ")
 
-    with open("/home/codecube/CC-assistant/pass.txt", "a") as fileap:
+    with open("/home/codecube/CC-assistant/assistant/pass.txt", "a") as fileap:
         fileap.write(inpnm)
         fileap.write("---")
         fileap.write(inpusrnm)
@@ -19,7 +19,7 @@ def writefile():
         fileap.write(inpmail)
 
 def readfile():
-    with open("/home/codecube/CC-assistant/pass.txt", "r") as filerd:
+    with open("/home/codecube/CC-assistant/assistant/pass.txt", "r") as filerd:
         storenum = []
         k=-1
 
