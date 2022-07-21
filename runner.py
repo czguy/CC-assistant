@@ -1,0 +1,2 @@
+import assistant
+assistant.startassistant()
